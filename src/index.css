@@ -1,0 +1,22 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  
+}
+
+.hide-scrollbar {
+  overflow-y: scroll;  /* Allow scrolling */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* For Chrome, Safari, and Opera */
+}
+
