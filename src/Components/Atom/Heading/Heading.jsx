@@ -14,7 +14,6 @@ function Heading({url}) {
           const res = await axios.get(url);
           setData(res.data.articles);  // Set data on successful response
           setError("");  // Clear any previous errors
-          console.log(res)
         } catch (err) {
           setError(err.message);  // Set the error message if the request fails
         }

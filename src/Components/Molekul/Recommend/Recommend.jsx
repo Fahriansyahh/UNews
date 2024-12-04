@@ -27,10 +27,10 @@ function Recommend({ nomorGanjil }) {
             .then(res => {
                 setData(res.data.articles);
                 setError("");  // Clear any previous errors
-                console.log(res)
             })
             .catch(err => {
                 setError(err.message);
+                console.log(err)
             });
     }, []); // Empty dependency array, so this runs once when component mounts
 
