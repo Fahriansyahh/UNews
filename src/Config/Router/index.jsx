@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router";
-import {Home,Dashboard,Searching} from "../../Pages/index"
+import {Home,Searching} from "../../Pages/index"
 
 
 function index() {
@@ -8,7 +8,7 @@ function index() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} /> 
-      <Route path="/Dashboard" element={<Dashboard />} /> 
+     
       <Route path={`/Searching`} element={<Searching />} /> 
     </Routes>
  </BrowserRouter>

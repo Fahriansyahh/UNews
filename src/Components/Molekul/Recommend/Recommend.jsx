@@ -27,6 +27,7 @@ function Recommend({ nomorGanjil }) {
             .then(res => {
                 setData(res.data.articles);
                 setError("");  // Clear any previous errors
+                console.log(res)
             })
             .catch(err => {
                 setError(err.message);
